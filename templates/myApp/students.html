@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudentsList</title>
+</head>
+<body>
+    <center style="list-style: none">
+        {% for student in studentsList %}
+            <li>{{ student.sGender}}{{ student.sName }}</li>
+        {% endfor %}
+        {% for student in studentList %}
+            <li>{{ student.sName }}&nbsp;{{ student.sGender }}&nbsp;&nbsp;{{ student.sDate }}&nbsp;&nbsp;{{ student.sNum }}&nbsp;&nbsp;{{ student.sDelete }}</li>
+        {% endfor %}
+
+    </center>
+</body>
+</html>

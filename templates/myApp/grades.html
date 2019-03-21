@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+</head>
+<body>
+    <h1>This is my Grades showPage!</h1>
+    <center>
+        {% for grade in gradesList %}
+            <li>
+                <a href="{{ grade.gId }}">{{ grade.gName }}</a>
+            </li>
+        {% endfor %}
+
+    </center>
+</body>
+</html>

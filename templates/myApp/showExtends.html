@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block main %}
+    <form action="" method="post">
+        {% csrf_token %}
+        userName: <input type="text" name="userName">
+        <input type="submit" value="submit">
+    </form>
+    <h1>This is my copy ExtendsPage!</h1>
+    {{ content|safe }}
+    {% autoescape on %}
+        {{ content }}
+    {% endautoescape %}
+{% endblock %}
